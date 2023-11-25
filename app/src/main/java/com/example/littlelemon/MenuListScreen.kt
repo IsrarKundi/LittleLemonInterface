@@ -110,6 +110,8 @@ fun MenuCategory(category: String) {
 
 @Composable
 fun MenuDish(Dish: Dish, navController: NavController) {
+
+//    the card that displays every item and its details
     Card (modifier = Modifier.clickable {
         navController.navigate(withArgs(Dish.name, Dish.price, Dish.description, Dish.image))
     }){
@@ -145,6 +147,8 @@ fun MenuDish(Dish: Dish, navController: NavController) {
         thickness = 1.dp
     )
 }
+
+//The new Screen to which we will be navigated when click on one of cards
 
 @Composable
 fun ItemDetails(
