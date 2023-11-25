@@ -162,7 +162,7 @@ fun ItemDetails(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
+//adding image to this new screen
         Image(
             painter = painterResource(id = image),
             contentDescription = null,
@@ -180,6 +180,8 @@ fun ItemDetails(
             Text(text = price, color = Color.Gray, fontWeight = Bold)
         }
         Spacer(modifier = Modifier.height(16.dp))
+
+//        adding button to order
         Button(
             onClick = {  },
             shape = RoundedCornerShape(20.dp),
